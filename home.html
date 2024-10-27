@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-yellow-600 text-white text-sm font-poppins text-center py-1">
+      Free Shipping on Orders Over $50! Limited Time Offer.
+    </div>
+    <nav
+      class="bg-black text-white py-4 flex items-center justify-between px-8 font-poppins uppercase"
+    >
+      <!-- Navbar Content with space-around -->
+      <div class="flex items-center justify-around w-full">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold">CarHub</a>
+
+        <!-- Menu Items -->
+        <div class="flex space-x-8">
+          <div class="relative group">
+            <a href="#" class="hover-underline-animation">Home</a>
+          </div>
+
+          <!-- Services with Multi-Section Mega Menu -->
+          <div class="relative group">
+            <a href="#" class="hover-underline-animation">Services</a>
+            <!-- Mega Menu for Services -->
+            <div
+              class="absolute left-0 top-full mt-2 hidden group-hover:flex bg-black text-white shadow-lg py-4 px-8 w-full"
+            >
+              <div class="flex space-x-16">
+                <!-- Performance Services -->
+                <div>
+                  <h3 class="text-lg font-semibold mb-2">Performance</h3>
+                  <a href="#" class="hover:underline block">Engine Tuning</a>
+                  <a href="#" class="hover:underline block"
+                    >Suspension Upgrades</a
+                  >
+                  <a href="#" class="hover:underline block">Exhaust Systems</a>
+                  <a href="#" class="hover:underline block">Turbochargers</a>
+                </div>
+
+                <!-- Aesthetic Services -->
+                <div>
+                  <h3 class="text-lg font-semibold mb-2">Aesthetics</h3>
+                  <a href="#" class="hover:underline block">Custom Paint</a>
+                  <a href="#" class="hover:underline block">Vinyl Wrapping</a>
+                  <a href="#" class="hover:underline block">Window Tinting</a>
+                  <a href="#" class="hover:underline block"
+                    >Detailing Services</a
+                  >
+                </div>
+
+                <!-- Maintenance Services -->
+                <div>
+                  <h3 class="text-lg font-semibold mb-2">Maintenance</h3>
+                  <a href="#" class="hover:underline block">Oil Change</a>
+                  <a href="#" class="hover:underline block">Tire Replacement</a>
+                  <a href="#" class="hover:underline block">Brake Inspection</a>
+                  <a href="#" class="hover:underline block">Battery Check</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <a href="#" class="hover-underline-animation">Products</a>
+          </div>
+
+          <div class="relative group">
+            <a href="#" class="hover-underline-animation">About Us</a>
+          </div>
+
+          <div class="relative group">
+            <a href="#" class="hover-underline-animation">Contact</a>
+          </div>
+        </div>
+
+        <!-- Search Icon & Learn More Button -->
+        <div class="flex items-center space-x-4">
+          <!-- Search Icon -->
+          <a
+            href="#"
+            class="text-white hover:text-yellow-600 transition duration-300"
+          >
+            <svg
+              fill="#fff"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 488.4 488.4"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path
+                      d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+
+          <!-- Learn More Button -->
+          <a
+            href="#"
+            class="bg-yellow-600 text-black font-semibold py-2 px-4 rounded-lg hover:bg-transparent hover:border border-yellow-600 border hover:border-yellow-600 hover:text-yellow-600 transition duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="w-full h-[75vh]" style="">
+        <section class="overlay">
+
+        </section>
+
+    </section>
+    <section
+      class="relative h-[85vh] overflow-hidden flex items-center justify-center bg-black"
+    >
+      <!-- Video Background -->
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="assets/bgvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Black Overlay -->
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center text-white ">
+        <!-- Short Text -->
+        <p class="text-base md:text-lg lg:text-xl font-medium">
+          For Car Enthusiasts, By Car Enthusiasts
+        </p>
+
+        <!-- Large Heading -->
+        <h1
+          style="font-family: 'Poppins', system-ui"
+          class="mt-4 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight uppercase"
+        >
+          Explore <span class="text-yellow-600">the World</span> of<br />
+          Automotive Excellence
+        </h1>
+
+        <div class="mt-10 flex justify-center space-x-4">
+          <!-- First Button with Hover Animation -->
+          <a
+            href="#"
+            class="inline-flex items-center bg-yellow-600 text-white text-sm font-semibold py-2 px-6 rounded-lg transition-all transform hover:-translate-y-1 hover:bg-transparent border border-yellow-600 duration-300 uppercase"
+          >
+            Get Started
+            <svg
+              class="w-5 h-5 ml-2"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2.5-9.5a.75.75 0 000 1.5H9v1.25a.75.75 0 001.5 0V10.5h1.25a.75.75 0 000-1.5H10.5V7.75a.75.75 0 00-1.5 0V9H7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <!-- Second Button with Hover Animation -->
+          <a
+            href="#"
+            style="font-family: poppins"
+            class="uppercase text-yellow-600 inline-flex items-center border border-yellow-600 text-white text-lg font-semibold py-2 px-6 rounded-lg transition-all transform hover:bg-yellow-600 hover:text-white duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+
+        <div class="relative w-full bg-center bg-cover">
+            <!-- Black Overlay -->
+            <div class="bg-black bg-opacity-80 w-full py-16 text-white font-poppins uppercase">
+              
+              <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <!-- Card 1: Performance -->
+                <div class="flex flex-col items-center space-y-4">
+                  <!-- Icon -->
+                  <div class="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M5 12l1.5-4.5h11L19 12h-4l-2-6h-2l-2 6H5zM2 14h5v4H4v2h16v-2h-3v-4h5v-2H2v2z" />
+                    </svg>
+                  </div>
+                  <!-- Heading -->
+                  <h3 class="text-2xl font-bold">Unmatched Performance</h3>
+                  <!-- Paragraph -->
+                  <p class="text-sm text-gray-300">Turbochargers, engine tuning, and exhaust systems for speed and power on every ride.</p>
+                </div>
+          
+                <!-- Card 2: Style -->
+                <div class="flex flex-col items-center space-y-4">
+                  <!-- Icon -->
+                  <div class="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M3 11h2v2H3v-2zm14 0h2v2h-2v-2zm-8 8h2v2H9v-2zm0-16h2v2H9V3zM4.22 4.22l1.42 1.42L4.22 7.08 2.8 5.66l1.42-1.44zM19.8 5.66l1.44 1.42-1.42 1.42-1.42-1.42 1.4-1.42zM11 9h2v6h-2V9zm-6.71 3.29l1.42-1.42 1.42 1.42-1.42 1.42-1.42-1.42zM18 3h-2v2h2V3zm0 16h-2v2h2v-2zm-7-7v2h6v-2h-6z" />
+                    </svg>
+                  </div>
+                  <!-- Heading -->
+                  <h3 class="text-2xl font-bold">Premium Style</h3>
+                  <!-- Paragraph -->
+                  <p class="text-sm text-gray-300">Custom paint, vinyl wrapping, and detailing to make every car a road masterpiece.</p>
+                </div>
+          
+                <!-- Card 3: Maintenance -->
+                <div class="flex flex-col items-center space-y-4">
+                  <!-- Icon -->
+                  <div class="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 7h6v2H9V7zM4 12h16v2H4v-2zm3 5h10v2H7v-2zm0-12h10v2H7V5zm9 4h2v10h-2V9zm-9 0h2v10H7V9zm9 10h2v2h-2v-2zm-9 0h2v2H7v-2z" />
+                    </svg>
+                  </div>
+                  <!-- Heading -->
+                  <h3 class="text-2xl font-bold">Reliable Maintenance</h3>
+                  <!-- Paragraph -->
+                  <p class="text-sm text-gray-300">Regular oil changes, brake checks, and more for peak performance on every drive.</p>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      
+    </section>
+  <!-- Section with Background Image and Overlay -->
+
+  
+  </body>
+</html>
